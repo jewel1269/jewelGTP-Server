@@ -10,9 +10,9 @@ const port = process.env.PORT || 3000;
 
 app.use(
   cors({
-    origin: "http://localhost:5173", 
+    origin: ["http://localhost:5173", "https://jewelgpt.netlify.app/"],
     credentials: true,
-    methods: ["GET", "POST", "PUT", "DELETE"], 
+    methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
